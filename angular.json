@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular-Socialdel": {
+    "Angular-Social": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Angular-Socialdel",
+            "outputPath": "dist/Angular-Social",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Angular-Socialdel:build"
+            "browserTarget": "Angular-Social:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Angular-Socialdel:build:production"
+              "browserTarget": "Angular-Social:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Angular-Socialdel:build"
+            "browserTarget": "Angular-Social:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         }
       }
     },
-    "Angular-Socialdel-e2e": {
+    "Angular-Social-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Angular-Socialdel:serve"
+            "devServerTarget": "Angular-Social:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Angular-Socialdel:serve:production"
+              "devServerTarget": "Angular-Social:serve:production"
             }
           }
         },
@@ -135,5 +135,5 @@
       }
     }
   },
-  "defaultProject": "Angular-Socialdel"
+  "defaultProject": "Angular-Social"
 }
